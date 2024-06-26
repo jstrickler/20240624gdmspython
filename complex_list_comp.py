@@ -22,7 +22,7 @@ for f in fruits:
 print(f"{f2 = }\n")
 
 #----------
-# easiest to read (?)
+# easiest to read (?) (>= 3.10)
 f3 = []
 for f in fruits:
     match f[0]:
