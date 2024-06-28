@@ -1,6 +1,7 @@
 
-x = 5
+x = 5  # (file) GLOBAL SCOPE (not inside functions or classes)
 
+# LOCAL NONLOCAL GLOBAL BUILTIN
 
 def spam():
     x = 22  # Local variable; does not modify global x

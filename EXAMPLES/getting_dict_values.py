@@ -31,3 +31,23 @@ print(airports.get(code, 'NO SUCH AIRPORT'))  # get value if key in dict, otherw
 
 print(airports.setdefault(code, 'Palm Springs'))  # get value if key in dict, otherwise get 'Palm Springs' AND set key
 print(code in airports)  # check for key in dict
+print(f"{airports = }\n")
+
+for code in airports:
+    print(code)
+print('-' * 60)
+
+
+for abbr, airport in airports.items():
+    print(abbr, airport)
+print('-' * 60)
+print(f"{airports.items() = }\n")
+print('-' * 60)
+
+# D.keys()
+# D.values()
+# D.items()   (key, value) ...
+
+
+
+

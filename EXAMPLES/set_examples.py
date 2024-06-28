@@ -1,7 +1,16 @@
 
-set1 = {'red', 'blue', 'green', 'purple', 'green'}  # create literal set
-set2 = {'green', 'blue', 'yellow', 'orange'}
 
+
+colors1 = ['red', 'blue', 'green', 'purple', 'green']  # create literal set
+colors2 = ['green', 'blue', 'yellow', 'orange']
+set1 = set(colors1)
+set2 = set(colors2)
+
+set1.add('taupe')  # add element to set (ignored if already in set)
+set1.add('taupe')  # add element to set (ignored if already in set)
+set1.add('taupe')  # add element to set (ignored if already in set)
+set1.add('taupe')  # add element to set (ignored if already in set)
+set1.add('taupe')  # add element to set (ignored if already in set)
 set1.add('taupe')  # add element to set (ignored if already in set)
 
 print(f"{set1 = }")
@@ -17,4 +26,10 @@ with open('../DATA/breakfast.txt') as breakfast_in:
     food = breakfast_in.read().splitlines()
 
 unique_food = set(food)  # Create set from iterable (e.g., list)
-print(unique_food)
+print(f"{food = }\n")
+print(f"{sorted(unique_food, key=str.lower) = }\n")
+
+print()
+
+my_set = {'spam', 'spam', 'spam', 'spam', 'spam', 'spam', 'spam', 'ham', 'spam', 'spam'}
+print(f"{my_set = }\n")

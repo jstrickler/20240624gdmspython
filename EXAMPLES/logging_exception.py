@@ -10,4 +10,5 @@ for i in range(3):
     try:
         result = i/0
     except ZeroDivisionError:
+        logging.warning("hi mom")
         logging.exception('Logging with exception info') # add exception info to the log

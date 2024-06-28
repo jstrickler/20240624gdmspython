@@ -40,7 +40,11 @@ def square_area(side):
     """
     return side ** 2
 
+print(f"{__name__ = }\n")
+
+
 if __name__ == "__main__":
+    print("ONLY WHEN RUN AS A SCRIPT!")
     area1 = square_area(15)
     print(f"area1: {area1}")
     
