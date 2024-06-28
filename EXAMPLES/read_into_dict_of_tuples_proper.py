@@ -2,6 +2,9 @@
 Script to read knight data from a file and display it.
 """
 from pprint import pprint
+# 1. builtin
+# 2. installed with pip
+# 3. local, user-created
 
 FILE_PATH = "../DATA/knights.txt"
 
@@ -18,7 +21,8 @@ def main():
     print(f"{robin_color = }")
     
 
-def read_knight_data(file_path):
+# type hinting
+def read_knight_data(file_path: str) -> dict[str,str]:
     """
     Read the knight data from a file and put it in a dictionary.
 
